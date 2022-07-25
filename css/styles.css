@@ -331,6 +331,9 @@ address {
   8px 1px 3px rgba(0, 0, 0, 12); 
 
 }
+.product4:hover .product-actions4 {
+  opacity: 1;
+}
 .product-thumb2 {
   position: relative;
 }
@@ -353,7 +356,8 @@ address {
 
   outline: 10px solid orange;
   display: flex;
-
+  opacity: 0;
+  transition: 500ms opacity linear;
  }
  .product-actions4 .icon4 {
   width: 32px;
