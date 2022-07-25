@@ -379,3 +379,60 @@ width: 40px;
 height: 40px;
 background-color: green;
 }
+
+/* Пятая картинка  */
+
+.product5 {
+  width: 370px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 2), 0px 1px 1px rgba(0, 0, 0, 14),
+  8px 1px 3px rgba(0, 0, 0, 12); 
+
+}
+.product5:hover .product-actions5 {
+  opacity: 1;
+}
+.product-thumb3 {
+  position: relative;
+}
+.product-meta5 {
+  padding: 15px;
+}
+.product-name5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.product-price5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.product-actions5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  outline: 10px solid orange;
+  display: flex;
+  opacity: 0;
+  transition: 500ms opacity linear;
+ }
+ .product-actions5 .icon5 {
+  width: 32px;
+  height: 32px;
+}
+.box4 {
+  position: absolute;
+width: 30px;
+height: 30px;
+top: 0;
+right: 0;
+background-color: tomato;
+}
+.box5 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+width: 40px;
+height: 40px;
+background-color: green;
+}
