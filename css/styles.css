@@ -391,6 +391,9 @@ background-color: green;
 .product5:hover .product-actions5 {
   opacity: 1;
 }
+.product-thumb3:hover::before {
+  opacity: 1;
+}
 .product-thumb3 {
   position: relative;
 }
