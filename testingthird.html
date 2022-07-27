@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+<body>
+     <a href="/testing.html">Назад на главную</a>
+     <p>С другой стороны стола сидела Анна Стёрксен вместе с этим длинным, 
+          тощим начальником отделения полиции. Как бишь его? Сначала он 
+          потратил больше восьмидесяти секунд на путь до зала заседаний, 
+          а теперь не может вспомнить имя — неужели стареет?
+          У него раньше и мыслей таких не появлялось, все началось прошлым 
+          вечером, а вот теперь опять! В тот раз он пригласил Лизу, молодую 
+          практикантку, на то, что он называл «сверхурочным обедом». Потом он 
+          пригласил ее на бокал вина в отель «Континенталь», где для работников
+           МИДа была забронирована комната для встреч, требующих особой секретности. 
+           Лизу долго просить не пришлось, она была амбициозной девушкой. 
+           Но сеанс не удался. Стареет? Нет, случайность, а может, лишний бокал вина, 
+           но не старость. Браннхёуг прогнал эту мысль обратно в подсознание и сел.</p>
+     <button data-open-modal>Открыть модалку</button>
+     <p>Благодарю вас за то, что вы все так быстро откликнулись и пришли сюда, — начал он.
+           — Разумеется, незачем лишний раз подчеркивать конфиденциальный характер этой 
+           встречи, но я считаю нужным все же сделать это, так как, возможно, не у всех 
+           присутствующих здесь достаточно опыта в подобного рода делах.
+            Он скользнул взглядом по всем, кроме Ракели, тем самым намекая, 
+           что последнее замечание относилось именно к ней. Потом повернулся к
+             Анне Стёрксен:</p>
+     <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+               <p>Она кивнула Мёллеру, которому пришлось пару раз откашляться, прежде чем начать говорить.
+               — Вообще, все вроде как в порядке. То есть он, конечно, испытал потрясение. Но… да, — он пожал плечами,
+               будто показывая, что ничего более существенного к сказанному не прибавишь.</p>
+          <button>Закрыть</button>
+          </div>
+
+     </div>
+     <script>
+          const refs= { 
+     openModalBtn: document.querySelector("[data-open-modal]"),
+     closeModalBtn: document.querySelector("[data-close-modal]"),
+     backdrop: document.querySelector("[[data-backdrop]"),
+     };
+
+     refs.openModalBtn.addEventlistener("click", toggleModal);
+     refs.closeModalBtn.addEventlistener("click", toggleModal);
+
+     refs.backdrop.addEventlistener("click", logBackdropClick);
+     
+     function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+     }
+
+     function logBackdropClick() {
+          console. log("Это клик в бекдроп");
+     }
+     </script>
+     <!-- Code injected by live-server -->
+     <script type="text/javascript">_</script>
+</body>
+</html>
