@@ -485,10 +485,14 @@ background-color: green;
 .menu-item {
   margin-right: 15px;
   outline: 2px solid tomato;
+  position: relative;
 }
 .menu-item:hover .submenu {
   display: block;
 }
+.menu-item:hover .menu-link {
+  background-color: palevioletred;
+} 
 .menu-link {
   display: block;
   padding: 10px 20px;
