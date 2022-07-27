@@ -471,5 +471,42 @@ background-color: green;
 
   background-color: white;
 
- 
+}
+
+/* Меню */
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+}
+.menu-item {
+  margin-right: 15px;
+  outline: 2px solid tomato;
+}
+.menu-item:hover .submenu {
+  display: block;
+}
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+}
+.submenu {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #ccc;
+  padding: 10px;
+
+  display: none;
+}
+.submenu a {
+  text-decoration: none;
 }
