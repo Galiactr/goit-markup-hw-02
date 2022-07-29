@@ -391,7 +391,7 @@ background-color: green;
 .product5:hover .product-actions5 {
   opacity: 1;
 }
-.product-thumb3:hover::before {
+.product-thumb5:hover::before {
   opacity: 1;
 }
 .product-thumb3 {
@@ -514,3 +514,64 @@ background-color: green;
 .submenu a {
   text-decoration: none;
 }
+
+/* Lesson */
+.btn {
+  position: relative;
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  overflow: hidden;
+
+  /* transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.04, 0, 0.2, 1); */
+
+  transition: background-color 250ms cubic-bezier(0.04, 0, 0.2, 1) ;
+}
+.btn::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  /* background-color: red; */
+  margin-right: 5px;
+  transition: transform 250ms cubic-bezier(0.04, 0, 0.2, 1);
+
+  background-image: url('../images/home3.svg')
+  /* background-size: contain; */
+    /* transform: translateY(20px); */
+}
+.btn:hover::before {
+  transform: translateY(-35px);
+
+}
+.btn::after {
+  position: absolute;
+  top: 50%;
+  left:30px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  transform: translateY(calc(-50% + 30px));
+  transition: transform 250ms cubic-bezier(0.04, 0, 0.2, 1) ;
+
+  background-color: orange;
+}
+.btn:hover::after {
+  transform: translateY(-50%);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d87093;
+  }
